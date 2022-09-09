@@ -6,7 +6,6 @@
 using namespace std;
 int main() 
 {
-	//string data="ÁÉÍÓÚ--áéíóú--Ññ";
 	int Num_Art=0, Año=0, Option=0;
 	string Nombre_V, Clasificacion, Caract, Descrip, Genero, Consola;
 	float Precio_U = 0, Imp = 0, Total = 0;
@@ -65,7 +64,7 @@ int main()
 			   break;
 
 		   default:
-			   cout << "Ingrese una opción correcta \n";
+			   cout << "Ingrese una de las opciones correcta \n";
 			   return main();
 
 	}
