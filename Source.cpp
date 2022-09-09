@@ -6,7 +6,7 @@
 using namespace std;
 int main() 
 {
-	int Num_Art=0, Año=0, Option=0;
+	int Num_Art=0, AÃ±o=0, Option=0;
 	string Nombre_V, Clasificacion, Caract, Descrip, Genero, Consola;
 	float Precio_U = 0, Imp = 0, Total = 0;
 
@@ -22,15 +22,15 @@ int main()
 			   cout << "Nombre del videojuego: \n";
 			   cin.ignore();
 			   getline(cin, Nombre_V);
-			   cout << "Año de lanzamiento: \n";
-			   cin >> Año;
-			   cout << "Clasificación: \n";
+			   cout << "AÃ±o de lanzamiento: \n";
+			   cin >> AÃ±o;
+			   cout << "ClasificaciÃ³n: \n";
 			   cin.ignore();
 			   getline(cin, Clasificacion);
 			   cout << "Caracteristicas: \n";
 			   cin.ignore();
 			   getline(cin, Caract);
-			   cout << "Género: \n";
+			   cout << "GÃ©nero: \n";
 			   cin.ignore();
 			   getline(cin, Genero);
 			   cout << "Consola: \n";
@@ -38,8 +38,8 @@ int main()
 			   getline(cin, Consola);
 			   cout << "Precio unitario: \n";
 			   cin >> Precio_U;
-			   cout << "Impuesto: \n";
-			   cin >> Imp;
+			   Imp=Precio_U*.16;
+			   cout << "Impuesto: \n"<<Imp<<endl;
 			   Total = Precio_U + Imp;
 			   cout << "Total: \n" << Total<<endl;
 			   return main();
